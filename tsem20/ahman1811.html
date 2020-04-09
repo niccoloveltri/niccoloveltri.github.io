@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+th {
+  text-align: left;
+}
+th, td {
+  padding: 10px;
+}
+</style>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>TSEM autumn 2019 - spring 2020</title>
+
+
+</head>
+<body>
+  <center><h2>Runners in Action
+  </h2></center>
+  <center><h3><a href="https://danel.ahman.ee/">Danel Ahman</a></h3>
+    </center>
+<center><h4>University of Ljubljana</h4>
+</center>
+<br>
+<hr>
+<br>
+<b>Abstract:</b> Runners of algebraic effects, also known as comodels,
+provide a mathematical model of resource management. We show that they
+also give rise to a programming concept that models top-level external
+resources, as well as allows programmers to modularly define their own
+intermediate "virtual machines". We capture the core ideas of
+programming with runners in an equational calculus λ-coop, which we
+equip with a sound and coherent denotational semantics that guarantees
+the linear use of resources and execution of finalisation code.
+<br>
+<br>
+We demonstrate runners in action through a variety of examples: hiding
+file handles from user code while guaranteeing their proper
+finalisation (by closing them); nesting runners to model user code
+inside a sandbox inside a VM inside an OS etc; nesting runners to
+instrument user code with cost models; nesting runners to implement
+(dynamically monitored and enforced) monotonic state on top of a
+runner that implements ordinary (non-monotonic) ML-style state; and
+pairing runners to combine different effects (e.g., state and file
+IO).
+<br>
+<br>
+We also accompany λ-coop both with a prototype language implementation
+in OCaml and a library in Haskell.
+<br>
+<br>
+This is joint work with Andrej Bauer.
+</body>
+</html>
