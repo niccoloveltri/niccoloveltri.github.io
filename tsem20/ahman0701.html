@@ -29,6 +29,22 @@ th, td {
 <br>
 <hr>
 <br>
-<b>Abstract:</b> TBA
+<b>Abstract:</b>
+In this talk I will tell you about my recent work with Matija Pretnar
+on asynchronous programming in the context of algebraic effects. I
+will explain how we complement algebraic effects' conventional
+synchronous treatment by showing how to naturally also accommodate
+asynchrony within them, namely, by decoupling the execution of
+operation calls into signalling that an operation's implementation
+needs to be executed, and interrupting a running computation with the
+operation's result, to which the computation can react by installing
+interrupt handlers. I will also show you how we capture these ideas in
+a small, type-safe, Agda-formalised core lambda-calculus for
+programming with asynchronous effects. This calculus is flexible
+enough to accommodate a wide range of examples, ranging from a
+multi-party web application, to preemptive multi-threading, to remote
+function calls, to a parallel variant of runners of algebraic effects,
+to Go-like select statements. I will demo these examples using a
+prototype implementation of our core calculus.
 </body>
 </html>
