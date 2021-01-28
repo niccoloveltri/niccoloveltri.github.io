@@ -20,7 +20,7 @@ th, td {
 
 </head>
 <body>
-  <center><h2>TBA
+  <center><h2>Generic and Efficient Partition Refinement
   </h2></center>
   <center><h3><a href="https://thorsten-wissmann.de/">Thorsten Wißmann</a></h3>
     </center>
@@ -29,6 +29,22 @@ th, td {
 <br>
 <hr>
 <br>
-<b>Abstract:</b> TBA
+  <b>Abstract:</b>
+  I present a generic partition refinement algorithm that quotients
+coalgebraic systems by behavioural equivalence, an important task in
+system analysis and verification. Coalgebraic generality allows to cover
+not only classical relational systems but also, e.g. various forms of
+weighted systems and furthermore to flexibly combine existing system
+types. Under assumptions on the type functor that allow representing its
+coalgebras in terms of nodes and edges, the algorithm runs in time O(m
+log n) for input coalgebras with n states and m edges. The generic
+complexity result and the possibility of combining system types yields a
+toolbox for efficient partition refinement algorithms. Instances of our
+generic algorithm match the run-time of the best known algorithms for
+unlabelled transition systems, Markov chains, deterministic automata,
+Segala systems, and for color refinement. For weighted tree automata,
+the instance of the generic algorithm even improves the best run-time
+known. The algorithm is implemented in a tool (CoPaR) in full generality
+and allows the composition of existing systems types at run-time.
 </body>
 </html>
