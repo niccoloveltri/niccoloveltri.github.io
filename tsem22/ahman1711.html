@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+th {
+  text-align: left;
+}
+th, td {
+  padding: 10px;
+}
+</style>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>TSEM autumn 2022 - spring 2023</title>
+
+
+</head>
+<body>
+  <center><h2>When Programs Have to Watch Paint Dry
+  </h2></center>
+  <center><h3><a href="https://danel.ahman.ee/">Danel Ahman</a></h3>
+    </center>
+<center><h4>University of Ljubljana</h4>
+</center>
+<br>
+<hr>
+<br>
+  <b>Abstract:</b> We explore type systems and programming abstractions for the safe use of resources. In particular, we investigate how to use types to modularly specify and check when programs are allowed to use their resources, e.g., when programming a robot arm on a production line, it is crucial that painted parts are given enough time to dry before assembly. We capture such temporal resources using a time-graded variant of Fitch-style modal type systems, develop a corresponding modally typed, effectful core calculus, and equip it with a graded-monadic denotational semantics illustrated by a concrete presheaf model. Our calculus also includes temporally-aware graded algebraic effects and effect handlers. The former are given a novel temporal treatment, where operations' specifications include their execution times, and their continuations know that an operation's worth of additional time has passed before they start executing, making it possible to safely access further temporal resources in them, and where effect handlers have to respect this temporal discipline.
+</body>
+</html>
