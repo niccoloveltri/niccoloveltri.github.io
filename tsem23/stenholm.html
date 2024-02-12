@@ -1,0 +1,81 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+th {
+  text-align: left;
+}
+th, td {
+  padding: 10px;
+}
+</style>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>TSEM autumn 2023 - spring 2024</title>
+
+
+</head>
+<body>
+  <center><h2>Wellfounded and non-wellfounded trees as models of set theory in
+Homotopy Type Theory</h2></center>
+  <center><h3>Elisabeth Stenholm</h3>
+    </center>
+<center><h4>University of Bergen</h4>
+</center>
+<br>
+<hr>
+<br>
+  <b>Abstract:</b>
+  There are several constructions of models of set theory in type
+theory, one of the first ones being Aczel's 1978 [1] model of set
+theory in type theory. In this model he uses a certain W-type, a
+type of wellfounded trees, as the type of sets, and equality is
+interpreted by a binary relation on these trees, which is not
+equal to the Martin-Löf identity type.
+<br><br>
+In this talk I will give an overview of how we can model set
+theory in Homotopy Type Theory (HoTT) using trees, but with
+equality interpreted as the identity type. Starting from Aczel's
+model we first carve out a subtype of the W-type he used and see
+that this gives us such a model. Since the type used for the
+model is a type of wellfounded trees, the sets in the model will
+be wellfounded, i.e. there is no infinite descending sequence of
+sets, x₀ ∋ x₁ ∋ ⋯ ∋ xₙ ∋ xₙ₊₁ ∋ ⋯ So in this model, the axiom of
+foundation holds.
+<br><br>
+One can then ask the question, what happens if we take the
+corresponding M-type which is the dual of Aczel's W-type as the
+starting point for a model? This is a type of non-wellfounded
+trees from which we carve out the corresponding subtype to the
+one we used for the wellfounded trees. This gives us a model of
+set theory with equality interpreted as the identity
+type. However, as this model builds on non-wellfounded trees, it
+contains sets which are anti-wellfounded, i.e. they contain an
+infinite descending sequence of elements. The simplest example of
+such a set is the Quine atom: the set which contains itself.
+<br><br>
+Since this model contains anti-wellfounded sets, the axiom of
+foundation does not hold. The question then arises, is there
+another axiom which to replace foundation with, which holds in
+the model? In fact, there are several different alternatives for
+the axiom of foundation for non-wellfounded sets. The most common
+of these is perhaps Aczel's anti-foundation axiom. However, this
+axiom turns out not to hold in our model. Instead, another
+anti-foundation axiom, proposed by Scott, holds in our model.
+<br><br>
+During the talk I will give examples of how sets are constructed
+in the models and give an outline of why the set theoretic axioms
+hold. Moreover, if time allows for it, I will explain how we can
+generalize the wellfounded model to higher homotopy levels,
+something we can do since we are working in a framework (HoTT)
+which contains higher structure.
+
+<br><br>
+[1]: P. Aczel, “The Type Theoretic Interpretation of Constructive Set Theory,” in Studies in Logic and the Foundations of Mathematics, vol. 96, A. Macintyre, L. Pacholski, and J. Paris, Eds., in Logic Colloquium ’77, vol. 96. , Elsevier, 1978, pp. 55–66. doi: 10.1016/S0049-237X(08)71989-X.
+
+</body>
+</html>
