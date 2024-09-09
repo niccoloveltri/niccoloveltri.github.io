@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+th {
+  text-align: left;
+}
+th, td {
+  padding: 10px;
+}
+</style>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>TSEM autumn 2024 - spring 2025</title>
+
+
+</head>
+<body>
+  <center><h2>Programming languages I have known and loved</h2></center>
+  <center><h3>Robin Cockett</h3>
+    </center>
+<center><h4>University of Calgary</h4>
+</center>
+<br>
+<hr>
+<br>
+  <b>Abstract:</b>
+It all started with Tatsuya Hagino's PhD thesis (1986) in which he
+showed how category theory could be used directly as a programming
+language. Computation in Tatsuya's system was delivered by rewriting
+categorical combinators -- similarly to Curran's categorical abstract
+machine (CAM). The downside was that you had to write programs in
+categorical combinators which was downright impossible ...
+<br><br>
+Dwight Spencer and I showed how one could translate from a more useable
+term logic into the categorical combinators.  This became the
+programming language Charity.  The computational power of Charity was
+delivered by the inductive and coinductive data declarations.
+Furthermore, in order to enhance the expressive power we allowed
+definitions of "combinators".
+<br><br>
+The resulting setting was not Cartesian closed: so, one had to program
+in a purely first-order manner.  This, it turned out, was a bit of a
+problem because one could not write efficient programs!  To  overcome
+this defect we increased the power of coinductive definitions to allow
+"higher-order coinductive" data.   In this way the computational power
+of Charity was still delivered by data declarations but one could
+declare the exponential type as a coinductive data type if you wanted
+to write higher-order programs.
+<br><br>
+Charity development stopped in about 1996.  It was a sequential
+programming language and the world had meanwhile become very
+concurrent!   Thus, I was determined to produce a categorical
+concurrent language.  This led to the development of CaMPL which stands
+for "Categorical Message Passing Language".  In CaMPL one can write
+write concurrent programs (and parallel programs) with typed
+communication channels.  For example, one can write airline booking
+systems.
+<br><br>
+Notably, in (a strongly typed version of) CaMPL one cannot write
+programs which have deadlocks or livelocks ... however, the language
+seems to be quite expressive.  I shall introduce you to the ideas of
+CAMPL which are strongly influenced by Charity ... and what I had
+learnt from its development.  
+</body>
+</html>
