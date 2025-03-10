@@ -20,7 +20,7 @@ th, td {
 
 </head>
 <body>
-  <center><h2>TBA</h2></center>
+  <center><h2>Formalising coinductive containers is hard!</h2></center>
   <center><h3>Stefania Damato</h3>
     </center>
 <center><h4>University of Nottingham</h4>
@@ -29,5 +29,10 @@ th, td {
 <hr>
 <br>
   <b>Abstract:</b>
-TBA</body>
+  Containers capture the concept of strictly positive data types in programming. The original development of containers is done in the internal language of Locally Cartesian Closed Categories (LCCCs) with disjoint coproducts and W-types, and Uniqueness of Identity Proofs (UIP) is implicitly assumed throughout. Although it is claimed that these developments can be interpreted in extensional Martin-Löf type theory, this interpretation is not made explicit.
+  <br><br>
+In this talk, I will outline the challenges that were involved in formalising the particular result that ‘containers preserve greatest fixed points’ in Cubical Agda. Firstly, it was unclear whether UIP was strictly necessary, as parts of our development are greatly simplified with this assumption. We show that UIP is not required, generalising the original result to a setting not restricted to h-sets. Secondly, we had to use various workarounds when writing our corecursive proofs. The formalisation also exposed an issue with Agda's current termination checker.
+  <br><br>
+      This is based on joint work with Thorsten Altenkirch and Axel Ljungström.
+</body>
 </html>
