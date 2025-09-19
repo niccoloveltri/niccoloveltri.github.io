@@ -20,7 +20,7 @@ th, td {
 
 </head>
 <body>
-  <center><h2>TBA</h2></center>
+  <center><h2>Context-independent derivative of regexes with lookarounds</h2></center>
   <center><h3>Léopold Gravier</h3>
     </center>
 <center><h4>Mines Paris - PSL</h4>
@@ -28,6 +28,8 @@ th, td {
 <br>
 <hr>
 <br>
-  <b>Abstract:</b> TBA
+  <b>Abstract:</b> Lookarounds are a convenient extension to regexes that allows to add a constraint on anterior or posterior parts of the input. The  feature is traditionally reserved to backtracking engines, which face severe worst-case performance issues. This motivates a research effort to integrate lookarounds in non-backtracking engines. The state of the art is currently to use oracles that tell whether the lookaround conditions are met.
+  <br><br>
+In this talk, I will present an alternative method for matching lookarounds that relies on regex-derivatives instead of oracles. This means that it transforms the regex to see what it can still accept after removing some letters from the input. I will first present a new semantics for language-derivatives and exhibit some of its properties. I will show that it induces an operation on regexes, but it is computationally expensive in the worst case.
 </body>
 </html>
