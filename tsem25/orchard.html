@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+}
+th {
+  text-align: left;
+}
+th, td {
+  padding: 10px;
+}
+</style>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<title>TSEM autumn 2025 - spring 2026</title>
+
+
+</head>
+<body>
+  <center><h2>Amortised cost analysis via graded types, and its semantics</h2></center>
+  <center><h3>Dominic Orchard</h3>
+    </center>
+<center><h4>University of Kent and University of Cambridge</h4>
+</center>
+<br>
+<hr>
+<br>
+  <b>Abstract:</b>
+The paradigm of graded types seeks to expose intensional aspects of
+computation via types, i.e., describing not just what is computed
+but how it is computed.
+<br><br>
+A property of particular interest is computational cost, e.g., memory
+use, compute time, recursive calls, or the repeated use of some
+expensive external resource. A graded monadic approach is a well-known
+technique for capturing a general cost analysis.
+<br><br>
+However, such analyses necessarily compute an imprecise over
+approximation to cost, based on local reasoning.  Once applications
+get more complex, involving data structures, we typically want to
+understand cost in the context of the entire application and the
+particulars of data structure operations and sizes. The notion of
+amortized analysis seeks to understand resource use more globally, and
+a graded analysis of amortized cost can be given by pairing cost and
+__potential__ graded modalities, as seen in the literature.
+<br><br>
+In this work, we seek to understand the relationship between cost and
+potential in more depth through the lens of categorical semantics.
+Specifically, we are interested in how to give a general framework for
+cost and potential that can be specialised for various concrete
+notions of cost. To study this, we define a general graded model for
+cost and potential that seeks to expose their essence.  The result is
+a model which subsumes existing semantics in the literature, and
+offers new general instances based on presheaves. Informed by the
+semantics, we also look at what is a useful syntax for programming
+with potential and cost.
+</body>
+</html>
