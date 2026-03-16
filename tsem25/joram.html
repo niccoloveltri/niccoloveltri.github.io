@@ -20,7 +20,8 @@ th, td {
 
 </head>
 <body>
-  <center><h2>TBA</h2></center>
+  <center><h2>Derivatives for Containers in Univalent Foundations
+</h2></center>
   <center><h3>Philipp Joram</h3>
     </center>
 <center><h4>Tallinn University of Technology</h4>
@@ -29,6 +30,33 @@ th, td {
 <hr>
 <br>
   <b>Abstract:</b>
-  TBA
+  Containers are a convenient type-theoretic representation of a wide
+class of inductive data types. Derivatives of containers compute
+representations of types of "one-hole contexts", useful for implementing
+tree-traversal algorithms.  We know that we can take the derivative of a
+container whenever its positions have decidable equality.
+<br><br>
+In a univalent setting, types represent ∞-groupoids, and containers let
+us model inductive types with interesting symmetries, such as finite
+multisets.  However, Hedberg's Theorem prevents us from taking
+derivatives of containers whose positions are higher types: types with
+decidable equality have trivial higher structure.
+<br><br>
+In this talk, I will show how to circumvent this apparent restriction,
+and extend derivatives to arbitrary, untruncated containers.  These
+derivatives satisfy the expected basic laws with respect to constants,
+sums, and products.  I derive the chain rule and show that it is in
+general non-invertible.  For traditional (set-valued) containers, the
+existence of an invertible chain rule is equivalent to a classical
+principle.  If time permits, I will sketch the derivation of a rule for
+derivatives of smallest fixed points from the chain rule and
+characterize its invertibility.
+<br><br>
+More details can be found in the following preprint:
+  <a href="https://arxiv.org/abs/2512.17484">https://arxiv.org/abs/2512.17484</a>
+<br><br>
+All results are formalized in Cubical Agda, and can be browsed
+interactively online:
+  <a href="https://phijor.me/derivatives/">https://phijor.me/derivatives/</a>
 </body>
 </html>
